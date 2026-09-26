@@ -13,7 +13,7 @@ const emit = defineEmits<{ (e: 'update:modelValue', value: string): void }>()
       v-for="option in options"
       :key="option.value"
       type="button"
-      class="min-h-[32px] rounded-full px-3 text-xs font-medium transition-colors"
+      class="min-h-[44px] rounded-full px-4 text-sm font-medium transition-colors"
       :class="
         modelValue === option.value
           ? 'bg-primary text-white'

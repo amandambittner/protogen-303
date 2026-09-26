@@ -30,21 +30,11 @@ const awaitingShowerDate = computed(
   () => props.task.dependsOn?.event === 'baby_shower' && !planStore.plan?.babyShowerDate
 )
 
-const nextStatus: Record<Status, Status> = {
-  pending: 'in_progress',
-  in_progress: 'done',
-  done: 'pending',
-}
-
 const statusOptions: { value: Status; label: string }[] = [
   { value: 'pending', label: 'To do' },
   { value: 'in_progress', label: 'In progress' },
   { value: 'done', label: 'Done' },
 ]
-
-function cycleStatus() {
-  tasksStore.updateStatus(props.task.id, nextStatus[props.task.status])
-}
 
 function setStatus(status: string) {
   tasksStore.updateStatus(props.task.id, status as Status)
@@ -96,7 +86,7 @@ async function submitNote() {
 </script>
 
 <template>
-  <div class="rounded-2xl border border-sage-100 bg-white shadow-sm">
+  <div class="overflow-hidden rounded-2xl border border-sage-100 bg-white shadow-sm">
     <div
       role="button"
       tabindex="0"
@@ -122,13 +112,7 @@ async function submitNote() {
         </div>
       </div>
       <div class="flex shrink-0 items-center gap-1">
-        <button
-          type="button"
-          class="flex h-11 min-w-[44px] items-center justify-center rounded-lg px-1"
-          @click.stop="cycleStatus"
-        >
-          <StatusBadge :status="task.status" />
-        </button>
+        <StatusBadge :status="task.status" />
         <ChevronDown :size="16" class="text-gray-300 transition-transform" :class="{ 'rotate-180': expanded }" />
       </div>
     </div>
