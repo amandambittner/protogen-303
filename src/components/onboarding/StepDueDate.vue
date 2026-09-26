@@ -23,7 +23,7 @@ const countdown = computed(() => {
       id="due-date"
       v-model="dueDate"
       type="date"
-      class="mt-1 w-full min-h-[44px] rounded-xl border border-gray-200 px-3 text-sm focus:border-primary focus:outline-none"
+      class="mt-1 w-full min-h-[44px] rounded-xl border border-gray-200 px-3 text-base focus:border-primary focus:outline-none"
     />
 
     <div v-if="countdown" class="mt-6 rounded-2xl border border-sage-100 bg-white p-4 text-center shadow-sm">
@@ -47,7 +47,7 @@ const countdown = computed(() => {
       id="shower-date"
       v-model="babyShowerDate"
       type="date"
-      class="mt-1 w-full min-h-[44px] rounded-xl border border-gray-200 px-3 text-sm focus:border-primary focus:outline-none"
+      class="mt-1 w-full min-h-[44px] rounded-xl border border-gray-200 px-3 text-base focus:border-primary focus:outline-none"
     />
   </div>
 </template>

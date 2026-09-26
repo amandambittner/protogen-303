@@ -16,7 +16,7 @@ const options: { value: Status | 'all'; label: string }[] = [
   <div class="relative flex-1">
     <select
       v-model="modelValue"
-      class="min-h-[40px] w-full appearance-none rounded-xl border border-sage-200 bg-white pl-3 pr-8 text-sm font-medium text-gray-700 focus:border-primary focus:outline-none"
+      class="min-h-[44px] w-full appearance-none rounded-xl border border-sage-200 bg-white pl-3 pr-8 text-base font-medium text-gray-700 focus:border-primary focus:outline-none"
     >
       <option v-for="opt in options" :key="opt.value" :value="opt.value">{{ opt.label }}</option>
     </select>

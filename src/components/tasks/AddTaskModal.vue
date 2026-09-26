@@ -64,7 +64,7 @@ function handleSubmit() {
             required
             maxlength="55"
             placeholder="e.g. Pick a hospital pediatrician"
-            class="mt-1 w-full min-h-[44px] rounded-xl border border-gray-200 px-3 text-sm focus:border-primary focus:outline-none"
+            class="mt-1 w-full min-h-[44px] rounded-xl border border-gray-200 px-3 text-base focus:border-primary focus:outline-none"
           />
         </div>
 
@@ -73,7 +73,7 @@ function handleSubmit() {
           <select
             id="task-category"
             v-model="category"
-            class="mt-1 w-full min-h-[44px] rounded-xl border border-gray-200 px-3 text-sm focus:border-primary focus:outline-none"
+            class="mt-1 w-full min-h-[44px] rounded-xl border border-gray-200 px-3 text-base focus:border-primary focus:outline-none"
           >
             <option v-for="c in categories" :key="c.key" :value="c.key">{{ c.label }}</option>
           </select>

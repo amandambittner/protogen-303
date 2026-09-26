@@ -97,7 +97,14 @@ async function submitNote() {
 
 <template>
   <div class="rounded-2xl border border-sage-100 bg-white shadow-sm">
-    <button type="button" class="flex w-full min-h-[44px] items-start justify-between gap-3 px-4 py-3 text-left" @click="expanded = !expanded">
+    <div
+      role="button"
+      tabindex="0"
+      class="flex w-full min-h-[44px] items-start justify-between gap-3 px-4 py-3 text-left"
+      @click="expanded = !expanded"
+      @keydown.enter="expanded = !expanded"
+      @keydown.space.prevent="expanded = !expanded"
+    >
       <div class="min-w-0 flex-1">
         <div class="flex items-center gap-2">
           <span class="truncate text-sm font-medium text-gray-800" :class="{ 'line-through text-gray-400': task.status === 'done' }">
@@ -114,13 +121,17 @@ async function submitNote() {
           </span>
         </div>
       </div>
-      <div class="flex shrink-0 items-center gap-2">
-        <span @click.stop="cycleStatus">
+      <div class="flex shrink-0 items-center gap-1">
+        <button
+          type="button"
+          class="flex h-11 min-w-[44px] items-center justify-center rounded-lg px-1"
+          @click.stop="cycleStatus"
+        >
           <StatusBadge :status="task.status" />
-        </span>
+        </button>
         <ChevronDown :size="16" class="text-gray-300 transition-transform" :class="{ 'rotate-180': expanded }" />
       </div>
-    </button>
+    </div>
 
     <div v-if="expanded" class="space-y-4 border-t border-gray-50 px-4 py-4">
       <form v-if="editing" class="space-y-2" @submit.prevent="saveEdit">
@@ -129,13 +140,13 @@ async function submitNote() {
           type="text"
           required
           maxlength="80"
-          class="w-full min-h-[40px] rounded-lg border border-gray-200 px-3 text-sm font-medium focus:border-primary focus:outline-none"
+          class="w-full min-h-[44px] rounded-lg border border-gray-200 px-3 text-base font-medium focus:border-primary focus:outline-none"
         />
         <textarea
           v-model="editDescription"
           rows="2"
           placeholder="Description (optional)"
-          class="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm text-gray-600 focus:border-primary focus:outline-none"
+          class="w-full rounded-lg border border-gray-200 px-3 py-2 text-base text-gray-600 focus:border-primary focus:outline-none"
         />
         <div class="flex gap-2">
           <button type="submit" class="min-h-[36px] flex-1 rounded-lg bg-primary text-sm font-medium text-white">
@@ -153,8 +164,8 @@ async function submitNote() {
       <div v-else class="flex items-start justify-between gap-2">
         <p v-if="task.description" class="text-sm text-gray-500">{{ task.description }}</p>
         <p v-else class="text-sm italic text-gray-300">No description</p>
-        <button type="button" class="shrink-0 text-gray-300 hover:text-primary" @click="startEditing">
-          <Pencil :size="14" />
+        <button type="button" class="flex h-11 w-11 shrink-0 items-center justify-center text-gray-300 hover:text-primary" @click="startEditing">
+          <Pencil :size="16" />
         </button>
       </div>
 
@@ -170,9 +181,9 @@ async function submitNote() {
             v-model="showerDateInput"
             type="date"
             required
-            class="min-h-[40px] flex-1 rounded-lg border border-gray-200 px-3 text-sm focus:border-primary focus:outline-none"
+            class="min-h-[44px] min-w-0 flex-1 rounded-lg border border-gray-200 px-3 text-base focus:border-primary focus:outline-none"
           />
-          <button type="submit" class="min-h-[40px] rounded-lg bg-primary px-3 text-sm font-medium text-white">
+          <button type="submit" class="min-h-[44px] shrink-0 rounded-lg bg-primary px-3 text-sm font-medium text-white">
             Save
           </button>
         </form>
@@ -186,7 +197,7 @@ async function submitNote() {
         <input
           type="date"
           :value="task.scheduledWeek"
-          class="min-h-[40px] w-full rounded-lg border border-gray-200 px-3 text-sm focus:border-primary focus:outline-none"
+          class="min-h-[44px] w-full rounded-lg border border-gray-200 px-3 text-base focus:border-primary focus:outline-none"
           @change="handleReschedule"
         />
       </div>
@@ -223,9 +234,9 @@ async function submitNote() {
             v-model="newSubtask"
             type="text"
             placeholder="Add a subtask…"
-            class="min-h-[40px] flex-1 rounded-lg border border-gray-200 px-3 text-sm focus:border-primary focus:outline-none"
+            class="min-h-[44px] min-w-0 flex-1 rounded-lg border border-gray-200 px-3 text-base focus:border-primary focus:outline-none"
           />
-          <button type="submit" class="min-h-[40px] rounded-lg bg-primary px-3 text-sm font-medium text-white">
+          <button type="submit" class="min-h-[44px] shrink-0 rounded-lg bg-primary px-3 text-sm font-medium text-white">
             Add
           </button>
         </form>
@@ -246,9 +257,9 @@ async function submitNote() {
             v-model="note"
             type="text"
             placeholder="Add a note…"
-            class="min-h-[40px] flex-1 rounded-lg border border-gray-200 px-3 text-sm focus:border-primary focus:outline-none"
+            class="min-h-[44px] min-w-0 flex-1 rounded-lg border border-gray-200 px-3 text-base focus:border-primary focus:outline-none"
           />
-          <button type="submit" class="min-h-[40px] rounded-lg bg-primary px-3 text-sm font-medium text-white">
+          <button type="submit" class="min-h-[44px] shrink-0 rounded-lg bg-primary px-3 text-sm font-medium text-white">
             Save
           </button>
         </form>

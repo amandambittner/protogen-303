@@ -52,7 +52,7 @@ const theme = computed(() => {
         type="text"
         placeholder="e.g. Emma"
         maxlength="40"
-        class="mt-1 w-full min-h-[44px] rounded-xl border border-gray-200 bg-white px-3 text-sm focus:border-primary focus:outline-none"
+        class="mt-1 w-full min-h-[44px] rounded-xl border border-gray-200 bg-white px-3 text-base focus:border-primary focus:outline-none"
       />
 
       <p class="mb-2 mt-4 text-sm font-medium text-gray-700">Boy, girl, or a surprise?</p>

@@ -21,7 +21,7 @@ const name = defineModel<string>('name', { required: true })
       id="name"
       v-model="name"
       type="text"
-      class="mt-1 w-full min-h-[44px] rounded-xl border border-gray-200 px-3 text-sm focus:border-primary focus:outline-none"
+      class="mt-1 w-full min-h-[44px] rounded-xl border border-gray-200 px-3 text-base focus:border-primary focus:outline-none"
     />
   </div>
 </template>
