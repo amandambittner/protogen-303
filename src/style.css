@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default (sage green) palette — used when no baby sex is set, or "surprise" is chosen. */
+  --color-primary: 63 107 82;
+  --color-primary-dark: 46 79 60;
+  --color-sage-50: 243 247 244;
+  --color-sage-100: 227 237 230;
+  --color-sage-200: 199 219 205;
+  --color-sage-500: 92 139 110;
+  --color-sage-600: 63 107 82;
+  --color-sage-700: 46 79 60;
+}
+
+[data-theme='boy'] {
+  --color-primary: 62 110 166;
+  --color-primary-dark: 44 79 122;
+  --color-sage-50: 239 244 250;
+  --color-sage-100: 220 231 243;
+  --color-sage-200: 185 207 232;
+  --color-sage-500: 95 143 196;
+  --color-sage-600: 62 110 166;
+  --color-sage-700: 44 79 122;
+}
+
+[data-theme='girl'] {
+  --color-primary: 179 77 119;
+  --color-primary-dark: 138 58 92;
+  --color-sage-50: 251 239 243;
+  --color-sage-100: 245 220 230;
+  --color-sage-200: 234 184 206;
+  --color-sage-500: 204 112 152;
+  --color-sage-600: 179 77 119;
+  --color-sage-700: 138 58 92;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  @apply bg-sage-50 text-gray-900;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}

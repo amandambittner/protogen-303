@@ -1,0 +1,609 @@
+{
+  "tasks": [
+    {
+      "id": "med_01",
+      "title": "Select an OB/GYN or midwife",
+      "description": "Choose your primary prenatal care provider early — practices often fill up quickly.",
+      "category": "medical",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 30,
+      "estimatedHours": 2
+    },
+    {
+      "id": "med_02",
+      "title": "Schedule all prenatal appointments",
+      "description": "Book out your recurring checkups so you don't scramble to find open slots later.",
+      "category": "medical",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 28,
+      "estimatedHours": 1
+    },
+    {
+      "id": "med_03",
+      "title": "Complete anatomy scan and key ultrasounds",
+      "description": "This detailed scan checks on baby's development and flags anything that needs follow-up.",
+      "category": "medical",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 20,
+      "estimatedHours": 0.5
+    },
+    {
+      "id": "med_04",
+      "title": "Select a pediatrician",
+      "description": "Your baby will need a pediatrician lined up before their first checkup after birth.",
+      "category": "medical",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 12,
+      "estimatedHours": 2
+    },
+    {
+      "id": "med_05",
+      "title": "Enroll in a childbirth class",
+      "description": "Learn what to expect during labor and delivery so you feel more prepared.",
+      "category": "medical",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 16,
+      "estimatedHours": 1
+    },
+    {
+      "id": "med_06",
+      "title": "Take a breastfeeding or feeding preparation class",
+      "description": "Build feeding confidence before baby arrives, whether you plan to breastfeed or bottle-feed.",
+      "category": "medical",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 10,
+      "estimatedHours": 1.5
+    },
+    {
+      "id": "med_07",
+      "title": "Take an infant CPR and first aid class",
+      "description": "A hands-on safety class that prepares you to respond to common infant emergencies.",
+      "category": "medical",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 10,
+      "estimatedHours": 3
+    },
+    {
+      "id": "med_08",
+      "title": "Pre-register at the hospital or birth center",
+      "description": "Completing paperwork ahead of time speeds up check-in when labor begins.",
+      "category": "medical",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 8,
+      "estimatedHours": 1
+    },
+    {
+      "id": "med_09",
+      "title": "Tour the hospital or birth center",
+      "description": "Seeing the labor and delivery unit ahead of time helps you know what to expect on the day.",
+      "category": "medical",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 10,
+      "estimatedHours": 2
+    },
+    {
+      "id": "med_10",
+      "title": "Create a birth plan",
+      "description": "Write down your preferences for labor, delivery, and immediate postpartum care.",
+      "category": "medical",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 8,
+      "estimatedHours": 2
+    },
+    {
+      "id": "med_11",
+      "title": "Receive recommended vaccines — Tdap and flu",
+      "description": "These vaccines help protect both you and your baby during pregnancy and after birth.",
+      "category": "medical",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 20,
+      "estimatedHours": 0.5
+    },
+    {
+      "id": "med_12",
+      "title": "Research pain management options for labor",
+      "description": "Understand your choices ahead of time so you can make informed decisions in the moment.",
+      "category": "medical",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 12,
+      "estimatedHours": 1
+    },
+    {
+      "id": "med_13",
+      "title": "Research postpartum mental health support",
+      "description": "Know the warning signs and resources available in case you need support after birth.",
+      "category": "medical",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 14,
+      "estimatedHours": 1
+    },
+    {
+      "id": "med_14",
+      "title": "Schedule postpartum follow-up appointments",
+      "description": "Book your own recovery checkup along with baby's first pediatrician visit.",
+      "category": "medical",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 6,
+      "estimatedHours": 0.5
+    },
+    {
+      "id": "med_15",
+      "title": "Identify a lactation consultant",
+      "description": "Having a consultant lined up makes it easier to get help quickly if feeding issues come up.",
+      "category": "medical",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 8,
+      "estimatedHours": 1
+    },
+    {
+      "id": "nur_01",
+      "title": "Set up the crib or bassinet",
+      "description": "Get baby's sleep space assembled and safety-checked well before their arrival.",
+      "category": "nursery",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 10,
+      "estimatedHours": 2,
+      "dependsOn": { "event": "baby_shower", "offsetWeeks": 1 }
+    },
+    {
+      "id": "nur_02",
+      "title": "Purchase and set up a baby monitor",
+      "description": "Choose a monitor and test it in the nursery so it's ready before baby comes home.",
+      "category": "nursery",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 10,
+      "estimatedHours": 1,
+      "dependsOn": { "event": "baby_shower", "offsetWeeks": 1 }
+    },
+    {
+      "id": "nur_03",
+      "title": "Paint or decorate the nursery",
+      "description": "Finish any painting early to allow time for fumes to clear and decor to dry.",
+      "category": "nursery",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 14,
+      "estimatedHours": 4
+    },
+    {
+      "id": "nur_04",
+      "title": "Assemble nursery furniture",
+      "description": "Put together the dresser, glider, and other furniture pieces ahead of time.",
+      "category": "nursery",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 12,
+      "estimatedHours": 3,
+      "dependsOn": { "event": "baby_shower", "offsetWeeks": 1 }
+    },
+    {
+      "id": "nur_05",
+      "title": "Wash and organize newborn clothing by size",
+      "description": "Pre-washing with a gentle detergent and sorting by size saves time in the newborn haze.",
+      "category": "nursery",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 6,
+      "estimatedHours": 2
+    },
+    {
+      "id": "nur_06",
+      "title": "Set up a changing station",
+      "description": "Stock a dedicated spot with diapers, wipes, and creams within easy reach.",
+      "category": "nursery",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 8,
+      "estimatedHours": 1,
+      "dependsOn": { "event": "baby_shower", "offsetWeeks": 1 }
+    },
+    {
+      "id": "nur_07",
+      "title": "Set up a nursing or feeding station",
+      "description": "Create a comfortable spot with water, snacks, and burp cloths for late-night feedings.",
+      "category": "nursery",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 8,
+      "estimatedHours": 1,
+      "dependsOn": { "event": "baby_shower", "offsetWeeks": 1 }
+    },
+    {
+      "id": "nur_08",
+      "title": "Install blackout curtains in the nursery",
+      "description": "Help baby (and you) sleep better by keeping the nursery dark for naps and bedtime.",
+      "category": "nursery",
+      "priority": "low",
+      "suggestedWeeksBeforeDue": 10,
+      "estimatedHours": 1
+    },
+    {
+      "id": "nur_09",
+      "title": "Purchase a white noise machine",
+      "description": "Consistent background noise can help soothe baby and mask household sounds.",
+      "category": "nursery",
+      "priority": "low",
+      "suggestedWeeksBeforeDue": 8,
+      "estimatedHours": 0.5
+    },
+    {
+      "id": "nur_10",
+      "title": "Baby-proof electrical outlets",
+      "description": "Cover exposed outlets in the nursery and common areas before baby starts moving.",
+      "category": "nursery",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 8,
+      "estimatedHours": 1
+    },
+    {
+      "id": "nur_11",
+      "title": "Anchor heavy furniture to walls",
+      "description": "Secure dressers and shelving units to prevent tip-over hazards.",
+      "category": "nursery",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 10,
+      "estimatedHours": 1.5
+    },
+    {
+      "id": "nur_12",
+      "title": "Deep clean the home before baby arrives",
+      "description": "Give the house a thorough clean now — it'll be much harder to find the time later.",
+      "category": "nursery",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 4,
+      "estimatedHours": 4
+    },
+    {
+      "id": "fin_01",
+      "title": "Research health insurance options for baby",
+      "description": "Understand your plan's requirements and deadlines for adding a new dependent.",
+      "category": "financial",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 20,
+      "estimatedHours": 2
+    },
+    {
+      "id": "fin_02",
+      "title": "Add baby to health insurance within 30 days of birth",
+      "description": "Most insurers require enrollment within a strict window after birth — don't miss it.",
+      "category": "financial",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 0,
+      "estimatedHours": 1,
+      "dependsOn": { "event": "birth", "offsetWeeks": 1 }
+    },
+    {
+      "id": "fin_03",
+      "title": "Create a monthly baby budget",
+      "description": "Estimate new recurring costs like diapers, formula, and childcare to plan ahead.",
+      "category": "financial",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 20,
+      "estimatedHours": 2
+    },
+    {
+      "id": "fin_04",
+      "title": "Review and update your will",
+      "description": "Make sure guardianship and asset decisions reflect your growing family.",
+      "category": "financial",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 24,
+      "estimatedHours": 3
+    },
+    {
+      "id": "fin_05",
+      "title": "Review and update life insurance coverage",
+      "description": "Confirm your coverage is enough to protect your family's new financial needs.",
+      "category": "financial",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 24,
+      "estimatedHours": 2
+    },
+    {
+      "id": "fin_06",
+      "title": "Update beneficiary designations on accounts",
+      "description": "Add your child as a beneficiary on retirement accounts and other policies as appropriate.",
+      "category": "financial",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 20,
+      "estimatedHours": 1
+    },
+    {
+      "id": "fin_07",
+      "title": "Research childcare costs and options",
+      "description": "Daycare and nanny waitlists can be long — start researching well ahead of your return to work.",
+      "category": "financial",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 20,
+      "estimatedHours": 3
+    },
+    {
+      "id": "fin_08",
+      "title": "Apply for parental or FMLA leave",
+      "description": "Submit paperwork early to make sure your leave is approved before your due date.",
+      "category": "financial",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 16,
+      "estimatedHours": 2
+    },
+    {
+      "id": "fin_09",
+      "title": "Open a college savings account (529 plan)",
+      "description": "Starting early gives tax-advantaged savings more time to grow.",
+      "category": "financial",
+      "priority": "low",
+      "suggestedWeeksBeforeDue": 16,
+      "estimatedHours": 2
+    },
+    {
+      "id": "fin_10",
+      "title": "Research WIC or financial assistance programs",
+      "description": "Check eligibility for programs that can help offset costs for formula, food, and more.",
+      "category": "financial",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 20,
+      "estimatedHours": 1
+    },
+    {
+      "id": "gear_01",
+      "title": "Purchase an infant car seat",
+      "description": "You'll need this installed before you can be discharged from the hospital.",
+      "category": "gear",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 10,
+      "estimatedHours": 2
+    },
+    {
+      "id": "gear_02",
+      "title": "Have car seat installation inspected by a certified tech",
+      "description": "A free inspection confirms the seat is installed correctly before you need it.",
+      "category": "gear",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 8,
+      "estimatedHours": 1
+    },
+    {
+      "id": "gear_03",
+      "title": "Purchase a stroller system",
+      "description": "Pick a stroller that fits your lifestyle and, if needed, works with your car seat.",
+      "category": "gear",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 12,
+      "estimatedHours": 2,
+      "dependsOn": { "event": "baby_shower", "offsetWeeks": 1 }
+    },
+    {
+      "id": "gear_04",
+      "title": "Obtain a breast pump (often covered by insurance)",
+      "description": "Check your insurance benefits — many plans cover a pump at no cost.",
+      "category": "gear",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 12,
+      "estimatedHours": 1
+    },
+    {
+      "id": "gear_05",
+      "title": "Stock up on newborn diapers and wipes",
+      "description": "Have a solid supply on hand so you're not making a diaper run right after coming home.",
+      "category": "gear",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 6,
+      "estimatedHours": 1
+    },
+    {
+      "id": "gear_06",
+      "title": "Set up a baby swing, bouncer, or rocker",
+      "description": "A safe spot to place baby down for a few minutes can be a lifesaver early on.",
+      "category": "gear",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 8,
+      "estimatedHours": 2,
+      "dependsOn": { "event": "baby_shower", "offsetWeeks": 1 }
+    },
+    {
+      "id": "gear_07",
+      "title": "Purchase a baby carrier or wrap",
+      "description": "Babywearing frees up your hands while keeping baby close and comforted.",
+      "category": "gear",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 10,
+      "estimatedHours": 1,
+      "dependsOn": { "event": "baby_shower", "offsetWeeks": 1 }
+    },
+    {
+      "id": "gear_08",
+      "title": "Purchase a baby bathtub",
+      "description": "A supportive infant tub makes bath time safer and easier in the early months.",
+      "category": "gear",
+      "priority": "low",
+      "suggestedWeeksBeforeDue": 8,
+      "estimatedHours": 0.5,
+      "dependsOn": { "event": "baby_shower", "offsetWeeks": 1 }
+    },
+    {
+      "id": "gear_09",
+      "title": "Buy a diaper bag",
+      "description": "Choose a bag with enough storage and organization for outings with baby.",
+      "category": "gear",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 10,
+      "estimatedHours": 1
+    },
+    {
+      "id": "gear_10",
+      "title": "Set up a bottle cleaning station and sterilizer",
+      "description": "Have a system ready for washing and sterilizing bottles and pump parts.",
+      "category": "gear",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 8,
+      "estimatedHours": 1,
+      "dependsOn": { "event": "baby_shower", "offsetWeeks": 1 }
+    },
+    {
+      "id": "gear_11",
+      "title": "Purchase a baby thermometer and nail file kit",
+      "description": "Small essentials that come in handy from the very first days home.",
+      "category": "gear",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 6,
+      "estimatedHours": 0.5
+    },
+    {
+      "id": "gear_12",
+      "title": "Stock a medicine cabinet with baby-safe essentials",
+      "description": "Keep infant pain reliever, saline drops, and a nasal aspirator on hand.",
+      "category": "gear",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 6,
+      "estimatedHours": 1
+    },
+    {
+      "id": "sup_01",
+      "title": "Plan postpartum help from family or friends",
+      "description": "Line up support in advance so you're not coordinating help in the middle of recovery.",
+      "category": "support",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 12,
+      "estimatedHours": 1
+    },
+    {
+      "id": "sup_02",
+      "title": "Research and hire a postpartum doula if desired",
+      "description": "A postpartum doula can provide hands-on support with newborn care and recovery.",
+      "category": "support",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 16,
+      "estimatedHours": 2
+    },
+    {
+      "id": "sup_03",
+      "title": "Prepare freezer meals for after the birth",
+      "description": "Stock the freezer now so healthy meals are ready when you're too tired to cook.",
+      "category": "support",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 6,
+      "estimatedHours": 4
+    },
+    {
+      "id": "sup_04",
+      "title": "Set up a meal train with friends and family",
+      "description": "Coordinate a schedule so meals keep coming during the first weeks postpartum.",
+      "category": "support",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 6,
+      "estimatedHours": 1
+    },
+    {
+      "id": "sup_05",
+      "title": "Discuss newborn care responsibilities with partner",
+      "description": "Talk through how you'll divide nighttime feedings, diaper changes, and chores.",
+      "category": "support",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 12,
+      "estimatedHours": 1
+    },
+    {
+      "id": "sup_06",
+      "title": "Discuss feeding approach with partner",
+      "description": "Align on your feeding plan so you can support each other once baby arrives.",
+      "category": "support",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 12,
+      "estimatedHours": 1
+    },
+    {
+      "id": "sup_07",
+      "title": "Prepare other children for the new baby",
+      "description": "Help siblings understand what's changing and how they can be involved.",
+      "category": "support",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 10,
+      "estimatedHours": 1
+    },
+    {
+      "id": "sup_08",
+      "title": "Prepare pets for the new baby's arrival",
+      "description": "Gradually introduce new sounds and routines to help pets adjust ahead of time.",
+      "category": "support",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 10,
+      "estimatedHours": 1
+    },
+    {
+      "id": "sup_09",
+      "title": "Identify your postpartum support network",
+      "description": "Know who you can call for emotional support, advice, or a few hours of help.",
+      "category": "support",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 12,
+      "estimatedHours": 1
+    },
+    {
+      "id": "sup_10",
+      "title": "Talk to your employer about leave logistics",
+      "description": "Confirm timing, paperwork, and coverage plans well ahead of your leave.",
+      "category": "support",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 16,
+      "estimatedHours": 1
+    },
+    {
+      "id": "doc_01",
+      "title": "Pack the hospital bag",
+      "description": "Have essentials for you, your partner, and baby packed and ready to grab.",
+      "category": "documents",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 6,
+      "estimatedHours": 2
+    },
+    {
+      "id": "doc_02",
+      "title": "Prepare a go-bag for the birth partner",
+      "description": "A separate bag with the birth partner's essentials keeps everyone ready to go.",
+      "category": "documents",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 6,
+      "estimatedHours": 1
+    },
+    {
+      "id": "doc_03",
+      "title": "Organize important documents for the hospital",
+      "description": "Gather your ID, insurance card, and birth plan into one easy-to-find folder.",
+      "category": "documents",
+      "priority": "high",
+      "suggestedWeeksBeforeDue": 8,
+      "estimatedHours": 1
+    },
+    {
+      "id": "doc_04",
+      "title": "Research newborn screening tests",
+      "description": "Understand the standard tests performed shortly after birth so nothing is a surprise.",
+      "category": "documents",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 10,
+      "estimatedHours": 1
+    },
+    {
+      "id": "doc_05",
+      "title": "Research and decide on cord blood banking",
+      "description": "Decide whether private or public cord blood banking is right for your family.",
+      "category": "documents",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 14,
+      "estimatedHours": 1
+    },
+    {
+      "id": "doc_06",
+      "title": "Update emergency contacts",
+      "description": "Make sure your emergency contact list reflects your current support network.",
+      "category": "documents",
+      "priority": "medium",
+      "suggestedWeeksBeforeDue": 8,
+      "estimatedHours": 0.5
+    },
+    {
+      "id": "doc_07",
+      "title": "Plan your birth announcement",
+      "description": "Decide how and when you'll share the news with family and friends.",
+      "category": "documents",
+      "priority": "low",
+      "suggestedWeeksBeforeDue": 10,
+      "estimatedHours": 1
+    }
+  ]
+}
